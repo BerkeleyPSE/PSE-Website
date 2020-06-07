@@ -84,9 +84,13 @@ html, body{
   padding-left: 30px;
 }
 
+.message-section{
+  padding-bottom: 50px;
+}
+
 .message-title{
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -106,4 +110,27 @@ html, body{
       width: 100%;
   }
   padding-right: 160px;
+}
+
+.about-section{
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+}
+
+.about-title{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+#about-title{
+  color: purple;
+  display: inline;
+  padding-left: 10px;
+}
+
+.about-message{
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
 }
