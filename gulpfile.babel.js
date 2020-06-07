@@ -20,6 +20,7 @@ function serve(cb) {
     gulp.watch('src/*.html', html);
     gulp.watch('src/css/*', css);
     gulp.watch('src/js/*', js);
+    gulp.watch('src/assets/*', assets);
     cb();
 }
 
@@ -46,8 +47,13 @@ function js() {
 }
 
 function build(cb) {
-    gulp.parallel(html, css, js)();
+    gulp.parallel(html, css, js, assets)();
     cb();
+}
+
+function assets() {
+  return gulp.src('./src/assets/*')
+        .pipe(gulp.dest('./build/assets/'));
 }
 
 //exports.build = build;

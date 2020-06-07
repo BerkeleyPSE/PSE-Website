@@ -31,6 +31,9 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.5.0",
+    "gulp-htmlmin": "^5.0.1",
+    "typed.js": "^2.0.11"
   }
 }

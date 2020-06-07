@@ -1,3 +1,85 @@
-p {
-    color: blue;
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+#header-section{
+  padding: 0;
+  height: 100%;
+}
+
+.header{
+  padding: 10px 0;
+  height: 100%;
+  background: url("../assets/background.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+#logo{
+  width: 250px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.main-navigation{
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.header-inner{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-link{
+  font-size: 1.1em;
+  color: white;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  letter-spacing: normal;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  position: relative;
+  top: -40px;
+  font-weight: normal;
+}
+
+.page-link:hover{
+  background: transparent;
+  font-weight: bolder;
+  color: purple;
+}
+
+.typed{
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  font-weight: 1000;
+  padding: 5% 10%;
+  width: 100%;
+}
+
+#typed{
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+  color: purple;
+  display: inline;
+  padding-left: 30px;
 }
