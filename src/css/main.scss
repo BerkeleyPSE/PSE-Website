@@ -27,8 +27,8 @@ html, body{
 }
 
 #logo{
-  width: 250px;
-  max-width: 250px;
+  width: 300px;
+  max-width: 300px;
   text-align: center;
 }
 
@@ -82,4 +82,28 @@ html, body{
   color: purple;
   display: inline;
   padding-left: 30px;
+}
+
+.message-title{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.message-image{
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 5px 50px 0 0;
+  padding-left: 200px;
+}
+
+.message{
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  @media (max-width: 620px) {
+      width: 100%;
+  }
+  padding-right: 160px;
 }
