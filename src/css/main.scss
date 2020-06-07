@@ -36,6 +36,7 @@ html, body{
   display: flex;
   justify-content: center;
   min-height: 40px;
+  font-size: 110%;
 }
 
 .header-inner{
@@ -82,6 +83,28 @@ html, body{
   color: purple;
   display: inline;
   padding-left: 30px;
+}
+
+.join-button{
+  border: none;
+  background-color: inherit;
+  padding: 15px 30px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: purple;
+  border-radius: 15px;
+  color: white;
+  display: block;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-button:hover {
+  opacity: 0.8;
+  color:white;
+  border-radius: 15px;
+  padding: 15px 30px;
 }
 
 .message-section{
