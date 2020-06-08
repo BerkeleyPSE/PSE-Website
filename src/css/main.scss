@@ -189,3 +189,18 @@ html, body{
 .flex-even{
   flex: 1;
 }
+
+.footer{
+  background: #2a292c;
+  height: 30%;
+  div{
+    height: 50%;
+    color: white;
+  }
+}
+
+.icon{
+  color: white;
+  padding: 20px;
+  font-size: 2em;
+}
