@@ -90,6 +90,7 @@ html, body{
   font-size: 28px;
   width: 200px;
   transition: all 0.5s;
+  padding-top: 10px;
   cursor: pointer;
   span{
     cursor: pointer;
@@ -119,7 +120,7 @@ html, body{
 }
 
 .message-section{
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .message-title{
@@ -137,6 +138,7 @@ html, body{
 
 .message{
   vertical-align: top;
+  padding-right: 40px;
   @media (max-width: 620px) {
       width: 100%;
   }
@@ -146,7 +148,7 @@ html, body{
   }
 
   #signature{
-      margin-bottom: 30px;
+      margin-bottom: 80px;
   }
 }
 
