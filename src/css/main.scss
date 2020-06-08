@@ -91,6 +91,10 @@ html, body{
   font-size: 28px;
   width: 200px;
   transition: all 0.5s;
+  border-radius: 10px;
+  padding: 5px;
+  border: purple 5px solid;
+  background-clip: padding-box;
   cursor: pointer;
   span{
     cursor: pointer;
@@ -98,23 +102,22 @@ html, body{
     position: relative;
     transition: 0.5s;
   }
-  span:after{
+  /*span:after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: -2px;
     right: -20px;
     transition: 0.5s;
-  }
+  }*/
 }
 
-.join-button:hover span {
-  padding-right: 25px;
+.join-button:hover{
+  background-color: purple;
 }
 
-.join-button:hover span:after {
+.join-button:hover{
   opacity: 1;
-  right: 0;
 }
 
 .message-section{
@@ -179,4 +182,10 @@ html, body{
 
 .flex-even{
   flex: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  .flex-even{
+    display: none !important;
+  }
 }
