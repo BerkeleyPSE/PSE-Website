@@ -12,6 +12,63 @@ html, body{
   scroll-behavior: smooth;
 }
 
+.loader-bg{
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.loader{
+  border: 0 solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  margin-top: -198px;
+  margin-left: -198px;
+}
+
+.loader:before, .loader:after{
+  content: '';
+  border: 1em solid purple;
+  border-radius:50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 3s linear;
+  opacity: 0;
+  background: url("../assets/logo192.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 160px;
+}
+
+.loader:before{
+  animation-delay: .5s;
+}
+
+@keyframes loader{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 #header-section{
   padding: 0;
   height: 100%;
