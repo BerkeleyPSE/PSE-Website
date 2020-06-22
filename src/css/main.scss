@@ -360,8 +360,35 @@ html, body{
 
 }
 
+.history-section{
+  background-color: rgba(230, 230, 230, 0.6);
+  padding-bottom: 80px;
+  clear: both;
+}
+
+.history-title{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  clear: both;
+}
+
+#history-title{
+  color: purple;
+  display: inline;
+  padding-left: 10px;
+  clear: both;
+}
+
+.history-message{
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
 .font-md{
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .flex-even{
@@ -418,6 +445,17 @@ body{
 
 .right{
 	padding: 25px 40px;
+}
+
+.right select{
+  width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
 }
 
 h2{
