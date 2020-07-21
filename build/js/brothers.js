@@ -1,7 +1,11 @@
 $(document).ready(function() {
     let eboard = [
-
+        ['Simone Ong', 'simone_ong.jpg', 'simone_ong2.jpg'],
+        ['Miles Yun', 'miles_yun.png', 'miles_yun2.jpg'],
+        ['Simone Ong', 'simone_ong.jpg', 'simone_ong2.jpg'],
+        ['Simone Ong', 'simone_ong.jpg', 'simone_ong2.jpg']
     ]
+    eboard.sort()
 
     let brothers = [
         ['Simone Ong', 'simone_ong.jpg', 'simone_ong2.jpg'],
@@ -10,28 +14,11 @@ $(document).ready(function() {
         ['Miles Yun', 'miles_yun.png', 'miles_yun2.jpg'],
         ['Miles Yun', 'miles_yun.png', 'miles_yun2.jpg']
     ]
-    console.log(brothers)
     brothers.sort()
-    console.log(brothers)
-    let html = ""
-    for (let i = 0; i < brothers.length; i += 4) {
-        console.log(i, Math.min(brothers.length, i + 4))
-        let selected = brothers.slice(i, Math.min(brothers.length, i + 4));
-        console.log(selected);
-        html += '<div class="d-inline-flex flex-row flex-wrap">'
-        for (j of selected) {
-            console.log(j);
-            if (j != undefined) {
-                html += '<span class="flex-fill frame">' +
-                        '<img src="./assets/' + j[1] + '">' +
-                        '<p>' + j[0] + '</p>' +
-                    '</span>';
-            }
-        }
-        html += '</div>'
-    }
 
-    $('#brothers-section').append(html);
+
+    $('#executive-board-section').append(makeBrothers(eboard))
+    $('#brothers-section').append(makeBrothers(brothers));
 
     $(".frame").children("img").hover(function() {
         for (i of brothers) {
@@ -53,5 +40,20 @@ $(document).ready(function() {
 });
 
 function makeBrothers(arr) {
-
+    let html = ""
+    for (let i = 0; i < arr.length; i += 4) {
+        let selected = arr.slice(i, Math.min(arr.length, i + 4));
+        html += '<div class="d-inline-flex flex-row flex-wrap">'
+        for (j of selected) {
+            if (j != undefined) {
+                html += '<span class="flex-fill frame">' +
+                        '<img src="./assets/' + j[1] + '">' +
+                        '<p>' + j[0] + '</p>' +
+                    '</span>';
+            }
+        }
+        html += '</div>'
+    }
+    console.log(html)
+    return html
 }
