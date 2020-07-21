@@ -80,6 +80,8 @@ html, body{
     }
 }
 
+$header_heights: 50%;
+
 #header-section{
     padding: 0;
     height: 100%;
@@ -94,7 +96,7 @@ html, body{
 
 #about-header-section{
     padding: 0;
-    height: 70%;
+    height: $header_heights;
     background: url("../assets/header.JPG");
     background-position: 50% 23%;
     background-size: cover;
@@ -105,7 +107,7 @@ html, body{
 
 #contact-header-section{
     padding: 0;
-    height: 40%;
+    height: $header_heights;
     background: url("../assets/header.JPG");
     background-position: 50% 23%;
     background-size: cover;
@@ -116,7 +118,7 @@ html, body{
 
 #careers-header-section{
     padding: 0;
-    height: 50%;
+    height: $header_heights;
     background: url("../assets/seniors.jpeg");
     background-position: 70% 30%;
     background-size: cover;
@@ -127,7 +129,7 @@ html, body{
 
 #brothers-header-section{
     padding: 0;
-    height: 50%;
+    height: $header_heights;
     background: url("../assets/seniors.jpeg");
     background-position: 70% 30%;
     background-size: cover;
@@ -138,7 +140,7 @@ html, body{
 
 #executive-board-section{
     padding: 2% 8%;
-    height: 50%;
+    height: 60%;
 }
 
 #brothers-section{
@@ -146,9 +148,6 @@ html, body{
     align-items: stretch;
     div{
         width: inherit;
-    }
-    .frame:hover img{
-        content: url("../assets/miles.jpg");
     }
     .frame{
         height: 60vh;
@@ -158,17 +157,16 @@ html, body{
             color: 342E39;
             font-size: 1.5rem;
             background-color: #EFEFEF;
-            max-width: 330px;
+            width: 20vw;
+            min-width: 240px;
             margin: auto;
             padding: 1vh 0;
-            border: 2px solid #000000;
-            border-top: 0px;
         }
         img{
-            border: 2px solid #000000;
+            min-width: 240px;
             object-fit: cover;
             height: 50vh;
-            max-width: 330px;
+            width: 20vw;
         }
     }
 }
