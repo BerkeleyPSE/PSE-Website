@@ -143,7 +143,8 @@ $header_heights: 50%;
     height: 60%;
 }
 
-#brothers-section{
+#brothers-section, #executive-board-section{
+    height: auto;
     padding: 2% 8%;
     align-items: stretch;
     div{
