@@ -14,7 +14,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.
         <link type="text/css" rel="stylesheet" href="./css/main.css">
+        css">
     </head>
     <body>
         <div class="loader-bg">
@@ -41,8 +43,8 @@
         </div>
         <div>
             <h1 class="full-time">Full Time</h1>
-            <table class="content-table">
-                <thead>
+            <table id="content-table">
+                <!-- <thead>
                   <tr>
                     <th>Name</th>
                     <th>Company</th>
@@ -68,7 +70,7 @@
                     <td>Product Manager</td>
                     <td>San Francisco, CA</td>
                   </tr>
-                </tbody>
+                </tbody> -->
               </table>
         </div>
         <div class="footer">
@@ -82,10 +84,9 @@
             </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <script src="./js/index-min.js"></script>
+        <script src="./js/careers-min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
         <script>
             setTimeout(function(){
                 $('.loader-bg').fadeToggle();

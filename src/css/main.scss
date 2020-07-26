@@ -90,8 +90,7 @@ $header_heights: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.75;
-    -webkit-filter: contrast(120%);
-    //filter: brightness(50%);
+    filter: blur(50%);
 }
 
 #about-header-section{
@@ -102,7 +101,7 @@ $header_heights: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
-    -webkit-filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 #contact-header-section{
@@ -113,7 +112,7 @@ $header_heights: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
-    -webkit-filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 #careers-header-section{
@@ -124,7 +123,7 @@ $header_heights: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
-    -webkit-filter: brightness(80%);
+    filter: blur(50%);
 }
 
 #brothers-header-section{
@@ -151,7 +150,6 @@ $header_heights: 50%;
         width: inherit;
     }
     .frame{
-        height: 60vh;
         margin: 2% 0;
         text-align: center;
         p{
@@ -166,22 +164,15 @@ $header_heights: 50%;
         img{
             min-width: 240px;
             object-fit: cover;
-            height: 50vh;
+            height: 45vh;
             width: 20vw;
         }
     }
 }
 
-
-
-#message-section{
-  height: 100%;
-}
-
 .header{
   &::before {
     content: "";
-    padding: 10px 0;
     height: 100%;
     position: absolute;
     top: 0px;
@@ -387,7 +378,7 @@ $header_heights: 50%;
 }
 
 .font-md{
-  font-size: 1.2em;
+  font-size: 1.0rem;
 }
 
 .flex-even{
@@ -581,12 +572,12 @@ textarea{
   }
 }
 
-@media screen and (min-width: 880px) and (max-width: 1177px) {
-    #brothers-section{
-        div{
-            .frame {
-                flex-basis: 50% !important;
-            }
-        }
-    }
-}
+// @media screen and (min-width: 880px) and (max-width: 1177px) {
+//     #brothers-section{
+//         div{
+//             .frame {
+//                 flex-basis: 50% !important;
+//             }
+//         }
+//     }
+// }
