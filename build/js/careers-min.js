@@ -1,0 +1,1 @@
+function getCareersData(){}$(document).ready(function(){getCareersData(),$(".content-table").DataTable()});
