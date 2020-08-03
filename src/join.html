@@ -29,7 +29,7 @@
                     <a href="spotlight.html"><span class="page-link">SPOTLIGHT</span></a>
                 </div>
                 <div class="d-inline-flex flex-nowrap justify-content-center order-sm-0 order-md-1">
-                  <a href="index.html"><img src="./assets/logo.png" id="logo"></a>
+                  <a href="index.html"><img src="./assets/pselogo2.png" id="logo"></a>
                 </div>
                 <div class="d-inline-flex flex-nowrap align-items-center justify-content-start nav flex-even order-sm-2 order-md-2">
                     <a href="careers.html"><span class="page-link">CAREERS</span></a>
@@ -39,6 +39,249 @@
                 </div>
             </div>
         </div>
+<!-- 
+        <div class="wrapper">
+          <div class="title">Application</div>
+          <div class="form">
+              <div class="inputfield">
+                  <label>First Name</label>
+                  <input type="text" class="input">
+              </div>  
+              <div class="inputfield">
+                  <label>Last Name</label>
+                  <input type="text" class="input">
+              </div>  
+              <div class="inputfield">
+                <label>School Year</label>
+                <div class="custom_select">
+                  <select>
+                    <option value="">Select</option>
+                    <option value="freshmen">Freshmen</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="inputfield">
+                  <label>Email Address</label>
+                  <input type="text" class="input">
+              </div> 
+              <div class="inputfield">
+                  <label>Phone Number</label>
+                  <input type="text" class="input">
+              </div> 
+              <div class="inputfield">
+                  <label>Current Address</label>
+                  <input type="text" class="input">
+              </div> 
+
+              <div class="inputfield">
+                  <label>Resume & Cover Letter</label>
+                  <div class="file-upload">
+                    <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                    <button class="file-upload__button" type="button">Choose File(s)</button>
+                    <span class="file-upload__label"></span>
+                  </div>
+              </div> 
+              <div class="inputfield">
+                <label>Question 1</label>
+                <textarea class="textarea"></textarea>
+              </div> 
+              <div class="inputfield">
+                <label>Question 2</label>
+                <textarea class="textarea"></textarea>
+              </div> 
+              <div class="inputfield">
+                <label>Question 3</label>
+                <textarea class="textarea"></textarea>
+              </div> 
+              <div class="inputfield">
+                <label>Question 4</label>
+                <textarea class="textarea"></textarea>
+              </div> 
+              <div class="inputfield">
+                <input type="submit" value="SUBMIT" class="btn">
+              </div>
+          </div>
+      </div>
+
+      <script>
+        Array.prototype.forEach.call(
+        document.querySelectorAll(".file-upload__button"),
+        function(button) {
+          const hiddenInput = button.parentElement.querySelector(
+            ".file-upload__input"
+          );
+          const label = button.parentElement.querySelector(".file-upload__label");
+          const defaultLabelText = "No file(s) selected";
+
+          // Set default text for label
+          label.textContent = defaultLabelText;
+          label.title = defaultLabelText;
+
+          button.addEventListener("click", function() {
+            hiddenInput.click();
+          });
+
+          hiddenInput.addEventListener("change", function() {
+            const filenameList = Array.prototype.map.call(hiddenInput.files, function(
+              file
+            ) {
+              return file.name;
+            });
+
+            label.textContent = filenameList.join(", ") || defaultLabelText;
+            label.title = label.textContent;
+          });
+        }
+      );
+      </script> -->
+
+        <div class="accordion">
+          <h1>Frequently Asked Questions (FAQs)</h1>
+          <!-- Accordion -->
+          <div class="acc">
+            <h3>What makes PSE different from other organizations?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>PSE differentiates itself from other business fraternities and organizations both in its learning philosophy and
+                  specialization. We prepare our brothers with the knowledge and skills necessary to succeed in today's business world,
+                  but we also go further to provide opportunities to utilize and hone these skills within projects across various industries.
+                  PSE hosts networking opportunities and corporate infosessions with professionals and alumni, and puts its members in
+                  positions to become their best possible professional selves. But, PSE provides far more than professional development
+                  - as a fraternity, we are an intimate, close-knit community where brothers can build strong personal relationships, and
+                  lasting friendships.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Are all recruitment events mandatory?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>You must attend at least one of the three recruitment events (Meet the Chapter, Social Mixer, Case Workshop) to be
+                  considered for an interview. The greater the number of events you attend, the more chances you have to meet the
+                  brothers and vice versa, and the better we will be able to learn about you.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>What if I cant attend a recruitment event?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>Recruitment events are designed for you to meet our brothers and familiarize yourself with Pi Sigma Epsilon. If you
+                  can’t make a recruitment event and would like to chat personally with one of our brothers instead, please contact
+                  berkeleypse.recruiting@gmail.com. You’re welcome to indicate your availability for a coffee chat and one of our brothers will reach out to you!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Is there a GPA minimum?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>We have a GPA minimum of 3.0, but we consider applicants holistically!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>What is the time commitment for a prospective member?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>The time commitment for a prospective member (PM) will incrementally change as the process continues. PMs are
+                  expected to attend a 3 hour weekly PM training on Monday nights in addition to contributing several hours per week
+                  for the first few weeks, and progressively more in the final weeks of training.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Is there an age/year ceiling?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>We do not have an age requirement, but you must be an undergraduate student with at least 3 semesters remaining
+                  (including your semester as a prospective member). First-semester freshmen are welcome to apply!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>I'm not a Business or Economics major. Can I still join?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>Of course! We love diversity. Close to half of our brothers are not majoring in Business or Economics. The brother who
+                  built this website is a Computer Science major. You're more than welcome to join.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>How many PMs does PSE accept each semester?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>It depends. If there are 20 recruits who are qualified, cultural fits, we will accept 20. If there is only one, we'll take
+                  him/her. On average, however, we tend to accept around 12 recruits per semester</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Why do you not use terms such as "rush" or "pledge"?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>PSE is a professional fraternity, and thus we choose to use terminology that reflects our professional attitude,
+                  character, and purpose. Terms such as "recruitment," "prospective member," "prospective member training," and "PM
+                  Trainer," are used in lieu of "rush," "pledge," "pledge process," and "pledgemaster," in any verbal or written
+                  communication involving participation or membership in Pi Sigma Epsilon.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Will I be hazed as a prospective member?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>Absolutely not. PSE respects the time and health of its prospective members. We actively encourage our PMs to raise
+                  any concerns to their PM trainers throughout the training process. PMs should expect to be challenged but should not
+                  sacrifice any aspect of health for PSE.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="acc">
+            <h3>Where can I ask more questions?</h3>
+            <div class="answer">
+              <div class="answer-inner">
+                <p>Fill out our contact form and we'll get back to you as soon as possible!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          $(document).ready(function(){
+              $('.acc h3').click(function(){
+                $(this).next('.answer').slideToggle();
+                $(this).parent().toggleClass('active');
+                $(this).parent().siblings().children('.answer').slideUp();
+                $(this).parent().siblings().removeClass('active');
+              });
+            });
+        </script>
+
         <div class="footer">
             <div class="d-flex justify-content-center align-items-end">
                 <span class="fab fa-facebook-f icon"></span>
