@@ -41,72 +41,74 @@
         </div>
 
         <div class="wrapper">
-          <div class="title">Application</div>
+          <div class="title"></div>
+          <h2>PSE Application</h2>
           <div class="form">
-              <div class="inputfield">
+              <form method="post" autocomplete="off" name="google-sheet">
+                <div class="inputfield">
                   <label>First Name</label>
-                  <input type="text" class="input">
-              </div>
-              <div class="inputfield">
-                  <label>Last Name</label>
-                  <input type="text" class="input">
-              </div>
-              <div class="inputfield">
-                <label>School Year</label>
-                <div class="custom_select">
-                  <select>
-                    <option value="">Select</option>
-                    <option value="freshmen">Freshmen</option>
-                    <option value="sophomore">Sophomore</option>
-                    <option value="junior">Junior</option>
-                    <option value="senior">Senior</option>
-                  </select>
+                  <input type="text" name="First Name" class="input">
                 </div>
-              </div>
-              <div class="inputfield">
-                  <label>Email Address</label>
-                  <input type="text" class="input">
-              </div>
-              <div class="inputfield">
-                  <label>Phone Number</label>
-                  <input type="text" class="input">
-              </div>
-              <div class="inputfield">
-                  <label>Current Address</label>
-                  <input type="text" class="input">
-              </div>
-
-              <div class="inputfield">
+                <div class="inputfield">
+                  <label>Last Name</label>
+                  <input type="text" name="Last Name" class="input">
+                </div>
+                <div class="inputfield">
+                  <label>School Year</label>
+                  <div class="custom_select">
+                    <select name="Year"> 
+                      <option value="">Select</option>
+                      <option value="freshman">Freshman</option>
+                      <option value="sophomore">Sophomore</option>
+                      <option value="junior">Junior</option>
+                      <option value="senior">Senior</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="text" name="Email" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number</label>
+                    <input type="text" name="Phone" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>Current Address</label>
+                    <input type="text" name="Address" class="input">
+                </div>
+                <!-- <div class="inputfield">
                   <label>Resume & Cover Letter</label>
                   <div class="file-upload">
                     <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
                     <button class="file-upload__button" type="button">Choose File(s)</button>
                     <span class="file-upload__label"></span>
                   </div>
-              </div>
-              <div class="inputfield">
-                <label>Question 1</label>
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="inputfield">
-                <label>Question 2</label>
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="inputfield">
-                <label>Question 3</label>
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="inputfield">
-                <label>Question 4</label>
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="inputfield">
-                <input type="submit" value="SUBMIT" class="btn">
-              </div>
+                </div> -->
+                <div class="inputfield">
+                  <label>Question 1</label>
+                  <textarea class="textarea" name="Question 1"></textarea>
+                </div>
+                <div class="inputfield">
+                  <label>Question 2</label>
+                  <textarea class="textarea" name="Question 2"></textarea>
+                </div>
+                <div class="inputfield">
+                  <label>Question 3</label>
+                  <textarea class="textarea" name="Question 3"></textarea>
+                </div>
+                <div class="inputfield">
+                  <label>Question 4</label>
+                  <textarea class="textarea" name="Question 4"></textarea>
+                </div>
+                <div class="inputfield">
+                  <input type="submit" name="submit" value="Submit" class="btn" onClick="window.location.reload();">
+                </div>
+              </form>
           </div>
       </div>
 
-      <script>
+      <!-- <script>
         Array.prototype.forEach.call(
         document.querySelectorAll(".file-upload__button"),
         function(button) {
@@ -136,11 +138,30 @@
           });
         }
       );
+      </script> -->
+
+      <script>
+        // UPDATING WHICH GOOGLE SHEET TO USE
+        // 1. GO TO GOOGLE SHEETS
+        // 2. LABEL THE COLUMNS WITH THE "name" attribute from the form above (ie. name="First Name" so column 1 would be First Name)
+        // 3. CLICK ON Tools >> Script Editor
+        // 4. COPY AND PASTE THE scriptforsheets FILE, removing the original function
+        // 4. CLICK ON Run >> Allow Access >> Publish >> Deploy as Web App
+        // 5. ALLOW ANYONE TO HAVE ACCESS
+        // 6. COPY PASTE "Current web app URL" into the scriptURL below
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzmb8K5jIXub2vTD7niancYYBCv7tI8g1CNtuBbiPyH3KaDYKW/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Your Application is Submitted!"))
+            .catch(error => console.error('Error!', error.message))
+        })
       </script>
 
         <div class="accordion">
           <h1>Frequently Asked Questions (FAQs)</h1>
-          <!-- Accordion -->
           <div class="acc">
             <h3>What makes PSE different from other organizations?</h3>
             <div class="answer">
@@ -156,7 +177,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Are all recruitment events mandatory?</h3>
             <div class="answer">
@@ -168,7 +188,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>What if I cant attend a recruitment event?</h3>
             <div class="answer">
@@ -180,7 +199,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Is there a GPA minimum?</h3>
             <div class="answer">
@@ -190,7 +208,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>What is the time commitment for a prospective member?</h3>
             <div class="answer">
@@ -202,7 +219,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Is there an age/year ceiling?</h3>
             <div class="answer">
@@ -213,7 +229,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>I'm not a Business or Economics major. Can I still join?</h3>
             <div class="answer">
@@ -224,7 +239,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>How many PMs does PSE accept each semester?</h3>
             <div class="answer">
@@ -235,7 +249,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Why do you not use terms such as "rush" or "pledge"?</h3>
             <div class="answer">
@@ -248,7 +261,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Will I be hazed as a prospective member?</h3>
             <div class="answer">
@@ -260,7 +272,6 @@
             </div>
           </div>
 
-          <!-- Accordian -->
           <div class="acc">
             <h3>Where can I ask more questions?</h3>
             <div class="answer">
