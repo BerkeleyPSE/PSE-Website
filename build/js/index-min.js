@@ -1,1 +1,1 @@
-$(document).ready(function(){new Typed("#typed",{strings:["CREATIVE.","PROFESSIONAL.","A BROTHERHOOD.","PI SIGMA EPSILON."],smartBackspace:!0,typeSpeed:80,startDelay:500,backDelay:700})});
+$(document).ready(function(){new Typed("#typed",{strings:["CREATIVE.","PROFESSIONAL.","A BROTHERHOOD.","PI SIGMA EPSILON."],smartBackspace:!0,typeSpeed:100,startDelay:500,backDelay:700})});
