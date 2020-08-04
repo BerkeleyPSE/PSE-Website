@@ -2,13 +2,17 @@ $(document).ready(function() {
     $.ajaxSetup({
         async: false
     });
-    people = getData()
-    console.log(people, "hello")
+    data = getData()
+    console.log(data, "hello")
     $('#content-table').DataTable({
-        data: people
+        data: data[0],
+        "order": [[ 5, "desc" ]]
     });
 
-
+    $('#internships-table').DataTable({
+        data: data[1],
+        "order": [[ 5, "desc" ]]
+    });
 });
 
 function getData() {
@@ -16,18 +20,22 @@ function getData() {
     let prefix = "https://spreadsheets.google.com/feeds/list/"
     let postfix = "/public/values?alt=json"
 
-    var people = []
+    let people = []
+    let internships = []
     for (let i = 1; i < 8; i++) {
         let spreadsheetURL = prefix + sheetID + "/" + i.toString() + postfix
         $.getJSON(spreadsheetURL, function(data) {
             console.log(data, people, i)
+            let title = data.feed.title.$t
             for (let d of data.feed.entry) {
-                if (d.hasOwnProperty('gsx$name')) {
-                    people.push([d.gsx$name.$t, d.gsx$position.$t, d.gsx$category.$t, d.gsx$location.$t])
+                if (title.includes("Internships")) {
+                    internships.push([d.gsx$name.$t, d.gsx$company.$t, d.gsx$position.$t, d.gsx$category.$t, d.gsx$location.$t, title.slice(-4)])
+                } else if (title.includes("FullTime")) {
+                    people.push([d.gsx$name.$t, d.gsx$company.$t, d.gsx$position.$t, d.gsx$category.$t, d.gsx$location.$t, title.slice(-4)])
                 }
             }
         });
     }
 
-    return people
+    return [people, internships]
 }
