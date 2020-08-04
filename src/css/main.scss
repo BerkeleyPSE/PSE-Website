@@ -137,6 +137,17 @@ $header_heights: 50%;
     -webkit-filter: brightness(80%);
 }
 
+#join-header-section{
+    padding: 0;
+    height: $header_heights;
+    background: url("../assets/seniors.jpeg");
+    background-position: 70% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    -webkit-filter: brightness(80%);
+}
+
 #executive-board-section{
     padding: 2% 8%;
     height: 60%;
@@ -170,23 +181,29 @@ $header_heights: 50%;
     }
 }
 
-.header{
-  &::before {
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-}
+// .header{
+//   &::before {
+//     content: "";
+//     height: 100%;
+//     position: absolute;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     left: 0px;
+//   }
+// }
 
 #logo{
   position: relative;
   width: 300px;
   max-width: 300px;
   text-align: center;
+}
+
+#careers-data{
+    width: 85%;
+    margin: auto;
+    padding: 5%;
 }
 
 .page-link{
@@ -423,7 +440,7 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.19);
 }
 
 .left{
@@ -463,7 +480,7 @@ h2:after{
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: purple;
+  background-color: #794aa2;
 }
 
 .field{
@@ -496,14 +513,14 @@ textarea{
 	outline: none;
 	cursor: pointer;
   transition: .3s;
-  outline: 0px solid purple;
+  outline: 0px solid #794aa2;
   border: 5px solid transparent;
 }
 
 .btn:hover{
   background-color: white;
   outline: 0px solid transparent;
-  border: 5px solid purple;
+  border: 5px solid #794aa2;
 }
 
 .field:focus{
@@ -512,7 +529,7 @@ textarea{
 }
 
 .full-time{
-  margin: 30px 150px;
+  font-size: 2.5rem;
 }
 
 
@@ -552,159 +569,164 @@ textarea{
   border-bottom: 2px solid #794aa2;
 }
 
-// .file-upload {
-//   display: inline-flex;
-//   align-items: center;
-//   font-size: 15px;
-// }
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+}
 
-// .file-upload__input {
-//   display: none;
-// }
+.file-upload__input {
+  display: none;
+}
 
-// .file-upload__button {
-//   -webkit-appearance: none;
-//   background: #794aa2;
-//   border: 1px solid #794aa2;
-//   border-radius: 5px;
-//   outline: none;
-//   padding: 0.5em 0.8em;
-//   margin-right: 5px;
-//   margin-left: 5px;
-//   color: #ffffff;
-//   font-size: 1em;
-//   cursor: pointer;
-// }
+.file-upload__button {
+  -webkit-appearance: none;
+  background: #794aa2;
+  border: 1px solid #794aa2;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  font-size: 1em;
+  cursor: pointer;
+}
 
-// .file-upload__button:active {
-//   background: #785b91;
-// }
+.file-upload__button:active {
+  background: #785b91;
+}
 
-// .file-upload__label {
-//   max-width: 500px;
-//   font-size: 0.95em;
-//   padding-left: 10px;
-//   text-overflow: ellipsis;
-//   overflow: hidden;
-//   white-space: nowrap;
-// }
+.file-upload__label {
+  max-width: 500px;
+  font-size: 0.95em;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
-// .wrapper{
-//   width: 50%;
-//   background: #fff;
-//   margin: 50px auto;
-//   padding: 30px;
-//   box-shadow:
-//   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-//   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-//   0 12.5px 10px rgba(0, 0, 0, 0.06),
-//   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-// }
+.wrapper{
+  z-index: 4;
+  width: 60%;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
+}
 
-// .wrapper .title{
-//   font-size: 30px;
-//   font-weight: 700;
-//   margin-bottom: 25px;
-//   color: #794aa2;
-//   text-transform: uppercase;
-//   text-align: center;
-// }
+.wrapper .title{
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: 794aa2;
+}
 
-// .wrapper .form{
-//   width: 100%;
-// }
+.wrapper h2{
+  text-align: center;
+  padding-bottom: 15px;
+}
 
-// .wrapper .form .inputfield{
-//   margin-bottom: 15px;
-//   display: flex;
-//   align-items: center;
-// }
+.wrapper .form{
+  width: 100%;
+}
 
-// .wrapper .form .inputfield label{
-//    width: 200px;
-//    color: #757575;
-//    margin-right: 10px;
-//   font-size: 14px;
-// }
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
 
-// .wrapper .form .inputfield .input,
-// .wrapper .form .inputfield .textarea{
-//   width: 100%;
-//   outline: none;
-//   border: 1px solid #d5dbd9;
-//   font-size: 15px;
-//   padding: 8px 10px;
-//   border-radius: 3px;
-//   transition: all 0.3s ease;
-// }
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
 
-// .wrapper .form .inputfield .textarea{
-//   width: 100%;
-//   height: 125px;
-//   resize: none;
-// }
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
 
-// .wrapper .form .inputfield .custom_select{
-//   position: relative;
-//   width: 100%;
-//   height: 37px;
-// }
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
 
-// .wrapper .form .inputfield .custom_select:before{
-//   content: "";
-//   position: absolute;
-//   top: 12px;
-//   right: 10px;
-//   border: 8px solid;
-//   border-color: #d5dbd9 transparent transparent transparent;
-//   pointer-events: none;
-// }
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
 
-// .wrapper .form .inputfield .custom_select select{
-//   -webkit-appearance: none;
-//   -moz-appearance:   none;
-//   appearance:        none;
-//   outline: none;
-//   width: 100%;
-//   height: 100%;
-//   border: 0px;
-//   padding: 8px 10px;
-//   font-size: 15px;
-//   border: 1px solid #d5dbd9;
-//   border-radius: 3px;
-// }
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
 
-// .wrapper .form .inputfield .input:focus,
-// .wrapper .form .inputfield .textarea:focus,
-// .wrapper .form .inputfield .custom_select select:focus{
-//   border: 1px solid #794aa2;
-// }
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
 
-// .wrapper .form .inputfield p{
-//    font-size: 14px;
-//    color: #757575;
-// }
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #794aa2;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
 
 
-// .wrapper .form .inputfield .btn{
-//   width: 100%;
-//   padding: 8px 10px;
-//   font-size: 15px; 
-//   border: 0px;
-//   background:  #794aa2;
-//   color: #fff;
-//   cursor: pointer;
-//   border-radius: 3px;
-//   outline: none;
-// }
+.wrapper .form .inputfield .btn{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background:  #794aa2;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
 
-// .wrapper .form .inputfield .btn:hover{
-//   background: #8660a7;
-// }
+.wrapper .form .inputfield .btn:hover{
+  background: #8660a7;
+}
 
-// .wrapper .form .inputfield:last-child{
-//   margin-bottom: 0;
-// }
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
 
 .accordion h1 {
   text-align: center;
@@ -801,13 +823,3 @@ textarea{
     }
   }
 }
-
-// @media screen and (min-width: 880px) and (max-width: 1177px) {
-//     #brothers-section{
-//         div{
-//             .frame {
-//                 flex-basis: 50% !important;
-//             }
-//         }
-//     }
-// }
