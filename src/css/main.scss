@@ -354,7 +354,7 @@ $header_heights: 50%;
 }
 
 #about-title{
-  color: purple;
+  color: #794aa2;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -365,6 +365,21 @@ $header_heights: 50%;
   padding-left: 8%;
   padding-right: 8%;
 
+}
+
+.three-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.split-section:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .history-section{
@@ -381,7 +396,7 @@ $header_heights: 50%;
 }
 
 #history-title{
-  color: purple;
+  color: #794aa2;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -456,7 +471,7 @@ body{
 
 .right select{
   width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
 	padding: 0.5rem 1rem;
@@ -506,7 +521,7 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: purple;
+	background-color: #794aa2;
 	color: #fff;
 	font-size: 1.1rem;
 	border: none;
@@ -518,14 +533,14 @@ textarea{
 }
 
 .btn:hover{
-  background-color: white;
+  background-color: #8660a7;
   outline: 0px solid transparent;
-  border: 5px solid #794aa2;
+  color: white;
 }
 
 .field:focus{
-  border: 2px solid rgba(30,85,250,0.47);
-  background-color: #fff;
+  border: 1px solid #794aa2;
+  background-color: white;
 }
 
 .full-time{
@@ -643,7 +658,7 @@ textarea{
 }
 
 .wrapper .form .inputfield label{
-   width: 200px;
+   width: 300px;
    color: #757575;
    margin-right: 10px;
   font-size: 14px;
@@ -821,5 +836,23 @@ textarea{
     .message-image{
       min-width: 100px !important;
     }
+  }
+}
+
+
+// @media screen and (min-width: 880px) and (max-width: 1177px) {
+//     #brothers-section{
+//         div{
+//             .frame {
+//                 flex-basis: 50% !important;
+//             }
+//         }
+//     }
+// }
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
 }
