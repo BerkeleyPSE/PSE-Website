@@ -181,23 +181,29 @@ $header_heights: 50%;
     }
 }
 
-.header{
-  &::before {
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-}
+// .header{
+//   &::before {
+//     content: "";
+//     height: 100%;
+//     position: absolute;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     left: 0px;
+//   }
+// }
 
 #logo{
   position: relative;
   width: 300px;
   max-width: 300px;
   text-align: center;
+}
+
+.careers-data{
+    width: 85%;
+    margin: auto;
+    padding: 5%;
 }
 
 .page-link{
@@ -538,7 +544,7 @@ textarea{
 }
 
 .full-time{
-  margin: 30px 150px;
+  font-size: 2.5rem;
 }
 
 
@@ -832,6 +838,7 @@ textarea{
     }
   }
 }
+<<<<<<< HEAD
 
 // @media screen and (min-width: 880px) and (max-width: 1177px) {
 //     #brothers-section{
@@ -849,3 +856,5 @@ textarea{
     width: 100%;
   }
 }
+=======
+>>>>>>> 02f910dfe0b92397e3a5b75b4434da8396851e4f
