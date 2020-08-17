@@ -156,28 +156,32 @@ $header_heights: 50%;
 #brothers-section, #executive-board-section{
     height: auto;
     padding: 2% 8%;
-    align-items: stretch;
+    object-fit: contain;
+    object-position: center;
+
     div{
         width: inherit;
+        text-align: center;
     }
     .frame{
-        margin: 2% 0;
+        display: inline-block;
         text-align: center;
+        margin: auto 1vh;
+        max-width: 220px;
+        min-width: 150px;
+        width: 20vw;
         p{
             color: 342E39;
-            font-size: 1.5rem;
-            background-color: #EFEFEF;
-            width: 20vw;
-            min-width: 240px;
-            margin: auto;
+            font-size: 1.2rem;
             padding: 1vh 0;
         }
-        img{
-            min-width: 240px;
-            object-fit: cover;
-            height: 45vh;
-            width: 20vw;
+        .profile{
+            height: 40vh;
+            max-width: 220px;
+            min-width: 200px;
             background: black;
+            background-position: center;
+            background-size: cover;
         }
     }
 }
