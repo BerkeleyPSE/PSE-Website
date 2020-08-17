@@ -45,7 +45,7 @@ $(document).ready(function() {
         ['Sarah Yoon', 'sarah_yoon.jpg', 'sarah_yoon.jpg'],
         ['Alan Lin', 'pselogo2.png', 'alan_lin.jpg'],
         ['Anirudh Kamath', 'pselogo2.png', 'anirudh_kamath.jpg'],
-        ['Amit Palekar', 'pselogo2.png', 'amit_palekar.jpg']
+        ['Amit Palekar', 'pselogo2.png', 'amit_palekar.jpg'],
         ['Anni Wang', 'pselogo2.png', 'anni_wang.jpg'],
         ['Cori Anne Montero', 'pselogo2.png', 'cori_montero.jpg'],
         ['Euna Jo', 'pselogo2.png', 'euna_jo.jpg'],
