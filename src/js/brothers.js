@@ -81,26 +81,24 @@ $(document).ready(function() {
 });
 
 function makeBrothers(arr) {
-    let html = ""
-    for (let i = 0; i < arr.length; i += 4) {
-        let selected = arr.slice(i, Math.min(arr.length, i + 4));
-        html += '<div class="d-inline-flex flex-row flex-wrap">'
+    let ROW_LENGTH = 5
+    let html = "<div class='container-fluid centered'>"
+    for (let i = 0; i < arr.length; i += ROW_LENGTH) {
+        let selected = arr.slice(i, Math.min(arr.length, i + ROW_LENGTH));
         for (j of selected) {
             if (j != undefined) {
-                html += '<span class="flex-fill frame">' +
-                        '<img src="./assets/' + j[1] + '">' +
+                html += '<div class="frame">' +
+                        '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
                         '<p>' + j[0] + '</p>' +
-                    '</span>';
+                    '</div>';
             }
         }
-        html += '</div>'
     }
-    // console.log(html)
+    html += '</div>'
     return html
 }
 
 function last_name_comparator(a, b) {
-    console.log(a, b, String(a[0].split(" ")[1]).localeCompare(String(b[0].split(" ")[1])))
     a = String(a[0].split(" ").pop())
     b = String(b[0].split(" ").pop())
     return a.localeCompare(b)
