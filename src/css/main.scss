@@ -167,18 +167,18 @@ $header_heights: 50%;
         display: inline-block;
         text-align: center;
         margin: auto 1vh;
-        max-width: 220px;
         min-width: 150px;
+        max-width: 220px;
         width: 20vw;
         p{
             color: 342E39;
-            font-size: 1.2rem;
+            font-size: 1.2em;
             padding: 1vh 0;
         }
         .profile{
             height: 40vh;
+            min-width: 150px;
             max-width: 220px;
-            min-width: 200px;
             background: black;
             background-position: center;
             background-size: cover;
@@ -860,4 +860,13 @@ textarea{
   .column {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 769px) {
+    .frame{
+        min-width: 200px !important;
+        .profile{
+            min-width: 200px !important;
+        }
+    }
 }
