@@ -41,10 +41,12 @@
         </div>
 
         <div class="wrapper">
-          <div class="title"></div>
           <h2>PSE Application</h2>
           <div class="form">
               <form method="post" autocomplete="off" name="google-sheet">
+                <div class="inputfield">
+                  <p><b>*</b>We recommend writing your answers on a separate document in the case that this does not save correctly.</p>
+                </div>
                 <div class="inputfield">
                   <label>First Name</label>
                   <input type="text" name="First Name" class="input">
@@ -78,11 +80,11 @@
                     <input type="text" name="Address" class="input">
                 </div>
                 <div class="inputfield">
-                  <label>1. Why are you interested in business?<br><b>300 Words or More</b></br></label>
+                  <label>1. Why are you interested in business?<br><b>300 Words or Less</b></br></label>
                   <textarea class="textarea" name="Question 1"></textarea>
                 </div>
                 <div class="inputfield">
-                  <label>2. Tell us about a business you admire and why?<br><b>300 Words or More</b></br></label>
+                  <label>2. Tell us about a business you admire and why?<br><b>300 Words or Less</b></br></label>
                   <textarea class="textarea" name="Question 2"></textarea>
                 </div>
                 <div class="inputfield">
@@ -111,47 +113,15 @@
           </div>
       </div>
 
-      <!-- <script>
-        Array.prototype.forEach.call(
-        document.querySelectorAll(".file-upload__button"),
-        function(button) {
-          const hiddenInput = button.parentElement.querySelector(
-            ".file-upload__input"
-          );
-          const label = button.parentElement.querySelector(".file-upload__label");
-          const defaultLabelText = "No file(s) selected";
-
-          // Set default text for label
-          label.textContent = defaultLabelText;
-          label.title = defaultLabelText;
-
-          button.addEventListener("click", function() {
-            hiddenInput.click();
-          });
-
-          hiddenInput.addEventListener("change", function() {
-            const filenameList = Array.prototype.map.call(hiddenInput.files, function(
-              file
-            ) {
-              return file.name;
-            });
-
-            label.textContent = filenameList.join(", ") || defaultLabelText;
-            label.title = label.textContent;
-          });
-        }
-      );
-      </script> -->
-
+      <!-- // UPDATING WHICH GOOGLE SHEET TO USE
+      // 1. GO TO GOOGLE SHEETS
+      // 2. LABEL THE COLUMNS WITH THE "name" attribute from the form above (ie. name="First Name" so column 1 would be First Name)
+      // 3. CLICK ON Tools >> Script Editor
+      // 4. COPY AND PASTE THE scriptforsheets FILE, removing the original function
+      // 4. CLICK ON Run >> Allow Access >> Publish >> Deploy as Web App
+      // 5. ALLOW ANYONE TO HAVE ACCESS
+      // 6. COPY PASTE "Current web app URL" into the scriptURL below -->
       <script>
-        // UPDATING WHICH GOOGLE SHEET TO USE
-        // 1. GO TO GOOGLE SHEETS
-        // 2. LABEL THE COLUMNS WITH THE "name" attribute from the form above (ie. name="First Name" so column 1 would be First Name)
-        // 3. CLICK ON Tools >> Script Editor
-        // 4. COPY AND PASTE THE scriptforsheets FILE, removing the original function
-        // 4. CLICK ON Run >> Allow Access >> Publish >> Deploy as Web App
-        // 5. ALLOW ANYONE TO HAVE ACCESS
-        // 6. COPY PASTE "Current web app URL" into the scriptURL below
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyzmb8K5jIXub2vTD7niancYYBCv7tI8g1CNtuBbiPyH3KaDYKW/exec'
         const form = document.forms['google-sheet']
 
@@ -162,139 +132,6 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
-
-        <div class="accordion">
-          <h1>Frequently Asked Questions (FAQs)</h1>
-          <div class="acc">
-            <h3>What makes PSE different from other organizations?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>PSE differentiates itself from other business fraternities and organizations both in its learning philosophy and
-                  specialization. We prepare our brothers with the knowledge and skills necessary to succeed in today's business world,
-                  but we also go further to provide opportunities to utilize and hone these skills within projects across various industries.
-                  PSE hosts networking opportunities and corporate infosessions with professionals and alumni, and puts its members in
-                  positions to become their best possible professional selves. But, PSE provides far more than professional development
-                  - as a fraternity, we are an intimate, close-knit community where brothers can build strong personal relationships, and
-                  lasting friendships.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Are all recruitment events mandatory?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>You must attend at least one of the three recruitment events (Meet the Chapter, Social Mixer, Case Workshop) to be
-                  considered for an interview. The greater the number of events you attend, the more chances you have to meet the
-                  brothers and vice versa, and the better we will be able to learn about you.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>What if I can't attend a recruitment event?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>Recruitment events are designed for you to meet our brothers and familiarize yourself with Pi Sigma Epsilon. If you
-                  can’t make a recruitment event and would like to chat personally with one of our brothers instead, please contact
-                  berkeleypse.recruiting@gmail.com. You’re welcome to indicate your availability for a coffee chat and one of our brothers will reach out to you!</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Is there a GPA minimum?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>There is no GPA minimum since we consider applicants holistically! PMT is a rigous process that has a history of negatively affecting GPA. Professional development is the PM Trainers highest priority and we do not want to jeaopardize your academic performance.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>What is the time commitment for a prospective member?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>The time commitment for a prospective member (PM) will incrementally change as the process continues. PMs are
-                  expected to attend a 3 hour weekly PM training on Monday nights in addition to contributing several hours per week
-                  for the first few weeks, and progressively more in the final weeks of training.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Is there an age/year ceiling?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>We do not have an age requirement, but you must be an undergraduate student with at least 3 semesters remaining
-                  (including your semester as a prospective member). First-semester freshmen are welcome to apply!</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>I'm not a Business or Economics major. Can I still join?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>Of course! We love diversity. Close to half of our brothers are not majoring in Business or Economics. The brother who
-                  built this website is a Computer Science major. You're more than welcome to join.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>How many PMs does PSE accept each semester?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>It depends. If there are 20 recruits who are qualified then we will accept 20. If there is only one, we'll accept
-                  them. On average, however, we tend to accept around 12 recruits per semester</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Why do you not use terms such as "rush" or "pledge"?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>PSE is a professional fraternity, and thus we choose to use terminology that reflects our professional attitude,
-                  character, and purpose. Terms such as "recruitment," "prospective member," "prospective member training," and "PM
-                  Trainer," are used in lieu of "rush," "pledge," "pledge process," and "pledgemaster," in any verbal or written
-                  communication involving participation or membership in Pi Sigma Epsilon.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Will I be hazed as a prospective member?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>Absolutely not. PSE respects the time and health of its prospective members. We actively encourage our PMs to raise
-                  any concerns to their PM trainers throughout the training process. PMs should expect to be challenged but should not
-                  sacrifice any aspect of health for PSE.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="acc">
-            <h3>Where can I ask more questions?</h3>
-            <div class="answer">
-              <div class="answer-inner">
-                <p>Fill out our contact form or direct any questions to <b>berkeleypse.recruiting@gmail.com</b> and we'll get back to you as soon as possible!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <script>
-          $(document).ready(function(){
-              $('.acc h3').click(function(){
-                $(this).next('.answer').slideToggle();
-                $(this).parent().toggleClass('active');
-                $(this).parent().siblings().children('.answer').slideUp();
-                $(this).parent().siblings().removeClass('active');
-              });
-            });
-        </script>
 
         <div class="footer">
             <div class="d-flex justify-content-center align-items-end">

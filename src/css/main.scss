@@ -80,7 +80,7 @@ html, body{
     }
 }
 
-$header_heights: 50%;
+$header_heights: 45%;
 
 #header-section{
     padding: 0;
@@ -97,7 +97,8 @@ $header_heights: 50%;
     height: $header_heights;
     // background: url("../assets/header.JPG");
     background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
-    background-position: 50% 23%;
+    // background-position: 50% 23%;
+    background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,9 +108,21 @@ $header_heights: 50%;
     height: $header_heights;
     // background: url("../assets/header.JPG");
     background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
-    background-position: 50% 23%;
+    // background-position: 50% 23%;
+    background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#spotlight-header-section{
+  padding: 0;
+  height: $header_heights;
+  // background: url("../assets/header.JPG");
+  background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
+  // background-position: 50% 23%;
+  background-position: 70% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #careers-header-section{
@@ -357,7 +370,7 @@ $header_heights: 50%;
 }
 
 #about-title{
-  color: #794aa2;
+  color: black;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -367,7 +380,6 @@ $header_heights: 50%;
   text-align: center;
   padding-left: 8%;
   padding-right: 8%;
-
 }
 
 .three-column {
@@ -386,7 +398,7 @@ $header_heights: 50%;
 }
 
 .history-section{
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: white;
   padding-bottom: 80px;
   clear: both;
 }
@@ -399,7 +411,7 @@ $header_heights: 50%;
 }
 
 #history-title{
-  color: #794aa2;
+  color: black;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -407,9 +419,34 @@ $header_heights: 50%;
 
 .history-message{
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%
+}
 
+.consulting-section{
+  background-color: rgba(230, 230, 230, 0.6);
+  padding-bottom: 80px;
+  clear: both;
+}
+
+.consulting-title{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  clear: both;
+}
+
+#consulting-title{
+  color: black;
+  display: inline;
+  padding-left: 10px;
+  clear: both;
+}
+
+.consulting-message{
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%
 }
 
 .font-md{
@@ -807,6 +844,26 @@ textarea{
 
 .acc {
   border-bottom: 1px solid #fff;
+}
+
+.msg {
+  text-align: center;
+  font-size: 100px;
+  padding: 150px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media (max-width:420px) {
