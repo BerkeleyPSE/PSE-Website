@@ -59,9 +59,7 @@ function build(cb) {
 function assets() {
   return gulp.src('./src/assets/*')
         .pipe(plumber())
-        .pipe(imagemin([
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5})]))
+        .pipe(imagemin())
         .pipe(gulp.dest('./build/assets/'));
 }
 
