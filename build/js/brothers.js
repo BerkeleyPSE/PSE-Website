@@ -18,7 +18,7 @@ $(document).ready(function() {
         ['Amy Tran', 'amy_tran.jpg', 'amy_tran.jpg'],
         ['Britney Yip', 'britney_yip.jpg', 'britney_yip.jpg'],
         ['Emily Wu', 'emily_wu.jpg', 'emily_wu.jpg'],
-        ['Natalia Brusco', 'natalia_brusco.jpg', 'natalia_brusco.jpg'],
+        ['Natalia Brusco', 'natalia_brusco1.jpg', 'natalia_brusco.jpg'],
         ['Priyanka Vatturi', 'priyanka_vatturi.jpg', 'priyanka_vatturi.jpg'],
         ['Adrian Chiu', 'adrian_chiu.jpg', 'adrian_chiu.jpg'],
         ['Amanda Di', 'pselogo2.png', 'amanda_di.jpg'],
@@ -30,7 +30,7 @@ $(document).ready(function() {
         ['Ankur Chadha', 'ankur_chadha.jpg', 'ankur_chadha.jpg'],
         ['Franklin Ye', 'franklin_ye.jpg', 'franklin_ye.jpg'],
         ['Isabelle Osorio', 'isabelle_osorio.jpg', 'isabelle_osorio.jpg'],
-        ['Julia Nuttall-Smith', 'julia_smith.jpg', 'julia_smith.jpg'],
+        ['Julia Nuttall-Smith', 'julia_nuttall_smith.jpg', 'julia_smith.jpg'],
         ['Miki Chen', 'miki_chen.jpg', 'miki_chen.jpg'],
         ['Amy Cha', 'amy_cha.jpg', 'amy_cha.jpg'],
         ['Violet Carter', 'violet_carter.jpg', 'violet_carter.jpg'],
@@ -87,10 +87,17 @@ function makeBrothers(arr) {
         let selected = arr.slice(i, Math.min(arr.length, i + ROW_LENGTH));
         for (j of selected) {
             if (j != undefined) {
-                html += '<div class="frame">' +
-                        '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
-                        '<p>' + j[0] + '</p>' +
-                    '</div>';
+                if (j[1] == 'pselogo2.png' || j[0] == 'Emily Wu') {
+                    html += '<div class="frame">' +
+                            '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
+                            '<p>' + j[0] + '</p>' +
+                        '</div>';
+                } else {
+                    html += '<div class="frame">' +
+                            '<div class="profile" style="background-image: url(https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/brothers/' + j[1] + ');"></div>' +
+                            '<p>' + j[0] + '</p>' +
+                        '</div>';
+                }
             }
         }
     }
