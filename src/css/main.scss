@@ -85,34 +85,31 @@ $header_heights: 50%;
 #header-section{
     padding: 0;
     height: 100%;
-    background: url("../assets/header2.jpg");
-    background-position: 50% 20%;
+    // background: url("../assets/header2.jpg");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/home/header1.png");
+    // background-position: 40% 10%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.75;
-    filter: blur(50%);
 }
 
 #about-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("../assets/header.JPG");
+    // background: url("../assets/header.JPG");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
     background-position: 50% 23%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    filter: brightness(90%);
 }
 
 #contact-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("../assets/header.JPG");
+    // background: url("../assets/header.JPG");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
     background-position: 50% 23%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    filter: brightness(90%);
 }
 
 #careers-header-section{
@@ -122,8 +119,6 @@ $header_heights: 50%;
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    filter: blur(50%);
 }
 
 #brothers-header-section{
@@ -133,8 +128,6 @@ $header_heights: 50%;
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    -webkit-filter: brightness(80%);
 }
 
 #join-header-section{
@@ -144,8 +137,6 @@ $header_heights: 50%;
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    -webkit-filter: brightness(80%);
 }
 
 #executive-board-section{
@@ -185,6 +176,13 @@ $header_heights: 50%;
         }
     }
 }
+
+// .overlay{
+//     position: fixed;
+//     width: 100%;
+//     height: $header_heights;
+//     background: transparent;
+// }
 
 // .header{
 //   &::before {
