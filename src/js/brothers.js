@@ -2,7 +2,7 @@ $(document).ready(function() {
     let eboard = [
         ['Simone Ong', 'simone_ong.jpg', 'simone_ong2.jpg'],
         ['Miles Yun', 'miles_yun.jpg', 'miles_yun2.jpg'],
-        ['Reshma Belur', 'simone_ong.jpg', 'simone_ong2.jpg'],
+        ['Reshma Belur', 'reshma_belur.jpg', 'reshma_belur.jpg'],
         ['Ankur Chadha', 'ankur_chadha.jpg', 'simone_ong2.jpg'],
         ['Santosh Tatipamula', 'santosh_tatipamula.jpg', 'santosh_tatipamula.jpg'],
         ['Violet Carter', 'violet_carter.jpg', 'violet_carter.jpg'],
