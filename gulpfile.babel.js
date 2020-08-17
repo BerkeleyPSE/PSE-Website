@@ -5,6 +5,7 @@ let htmlmin = require('gulp-htmlmin');
 let sass = require('gulp-sass');
 let minify = require('gulp-minify');
 let cleanCSS = require('gulp-clean-css');
+let imagemin = require('gulp-imagemin');
 
 sass.compiler = require('node-sass');
 
@@ -53,6 +54,7 @@ function build(cb) {
 
 function assets() {
   return gulp.src('./src/assets/*')
+        .pipe(imagemin(imagemin.mozjpeg({quality: 75, progressive: true})))
         .pipe(gulp.dest('./build/assets/'));
 }
 
