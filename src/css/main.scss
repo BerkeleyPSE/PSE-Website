@@ -85,9 +85,9 @@ $header_heights: 45%;
 #header-section{
     padding: 0;
     height: 100%;
-    // background: url("../assets/header2.jpg");
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/home/header1.png");
-    // background-position: 40% 10%;
+    background: url("../assets/photo2.jpg");
+    // background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/home/header1.png");
+    background-position: 40% 30%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,9 +107,9 @@ $header_heights: 45%;
     padding: 0;
     height: $header_heights;
     // background: url("../assets/header.JPG");
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,q_auto:best/website/home/header3.png");
     // background-position: 50% 23%;
-    background-position: 70% 30%;
+    background-position: 70% 70%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -128,7 +128,7 @@ $header_heights: 45%;
 #careers-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("../assets/seniors.jpeg");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/website/about/header2.jpg");
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,8 +137,8 @@ $header_heights: 45%;
 #brothers-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("../assets/seniors.jpeg");
-    background-position: 70% 30%;
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/about/header1.png");
+    background-position: 70% 15%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -146,7 +146,8 @@ $header_heights: 45%;
 #join-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("../assets/seniors.jpeg");
+    // background: url("../assets/seniors.jpeg");
+    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/website/home/header2.jpg");
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +237,7 @@ $header_heights: 45%;
 .page-link:hover{
   background: transparent;
   font-weight: 1000;
-  color: purple;
+  color: #6d21af;
   z-index: 101;
   font-size: 1.2rem;
   transition: font-size 20ms;
@@ -266,7 +267,7 @@ $header_heights: 45%;
   text-align: center;
   position: relative;
   font-weight: 1000;
-  color: purple;
+  color: #6d21af;
   display: inline;
   padding-left: 30px;
 }
@@ -293,13 +294,13 @@ $header_heights: 45%;
     top: -2px;
     right: -20px;
     transition: 0.5s;
-    color: purple;
+    color: #6d21af;
   }
 }
 
 .join-button:hover span {
   padding-right: 25px;
-  color: purple;
+  color: #6d21af;
 }
 
 .join-button:hover span:after {
@@ -340,6 +341,114 @@ $header_heights: 45%;
   }
 }
 
+.interest-form {
+  display: grid;
+  place-items: center;
+  padding: 100px;
+  background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
+  // background: url("../assets/photo2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  background-size: cover; 
+}
+
+.interest-form h2{
+  color: white;
+  font-weight: bold;
+}
+
+.interest-form .form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow:hidden;
+  width: 80%;
+  max-width: 300px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-button {
+  font-size: 14px;
+  border: 0;
+}
+
+.form-input {
+  padding: 1.5em;
+  font-weight: bold;
+}
+
+.form-input::placeholder {
+  opacity: 0.35;
+}
+
+.form-input:focus::placeholder {
+  color: #794aa2;
+  opacity: 0.85;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-item:first-of-type {
+  position: relative;
+}
+
+.form-item:first-of-type::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+}
+
+.form-button {
+  background: #794aa2;
+  color: white;
+  padding: 1.25em 2.25em;
+}
+
+.form-button:hover {
+  opacity: 0.9;
+  outline: none;
+}
+
+@media only screen and (min-width: 550px) {
+  .interest-form .form {
+    flex-direction: row;
+    max-width: 650px;
+    border: 10px solid white;
+    border-radius: 3em;
+    background: white;
+  }
+  .form-button {
+    border-radius: 3em;
+    margin-left: auto;
+  }
+  .form-item {
+    justify-content: center;
+  }
+  .form-item:last-of-type {
+    flex-grow: 1;
+  }
+  .form-item:first-of-type::after {
+    right:0;
+    left: initial;
+    top:0;
+    bottom:0;
+    width: 1px;
+    height: initial;
+  }
+}
+
 #reveal-message{
   z-index: 100;
   margin-top: 10%;
@@ -370,7 +479,7 @@ $header_heights: 45%;
 }
 
 #about-title{
-  color: black;
+  color: #6d21af;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -389,6 +498,12 @@ $header_heights: 45%;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.three-column li{
+  font-size: 15px;
+  padding: 5px;
+  font-weight: bold;
 }
 
 .split-section:after {
@@ -522,8 +637,8 @@ body{
 
 h2{
 	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
+	padding: 0 0 20px;
+	margin-bottom: 20px;
 }
 
 h2:after{
@@ -533,7 +648,7 @@ h2:after{
   bottom: 0;
   transform: translateX(-50%);
   height: 4px;
-  width: 50px;
+  width: 80px;
   border-radius: 2px;
   background-color: #794aa2;
 }
