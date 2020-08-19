@@ -92,6 +92,7 @@ $header_heights: 45%;
     background-repeat: no-repeat;
 }
 
+
 #about-header-section{
     padding: 0;
     height: $header_heights;
@@ -357,6 +358,10 @@ $header_heights: 45%;
   font-weight: bold;
 }
 
+.interest-form h2:after{
+  background-color:white;
+}
+
 .interest-form .form {
   display: flex;
   flex-direction: column;
@@ -465,8 +470,34 @@ $header_heights: 45%;
   top: 10px;
 }
 
+.about-section0{
+  background-color: #f7f7f7;
+  padding-bottom: 80px;
+  clear: both;
+}
+
+.about-title0{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  clear: both;
+}
+
+#about-title0{
+  color: #6d21af;
+  display: inline;
+  padding-left: 10px;
+  clear: both;
+}
+
+.about-message0{
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
 .about-section{
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
   padding-bottom: 80px;
   clear: both;
 }
@@ -479,7 +510,7 @@ $header_heights: 45%;
 }
 
 #about-title{
-  color: #6d21af;
+  color: black;
   display: inline;
   padding-left: 10px;
   clear: both;
@@ -488,22 +519,112 @@ $header_heights: 45%;
 .about-message{
   text-align: center;
   padding-left: 8%;
-  padding-right: 8%;
+  padding-right: 10%;
+  margin-left: 50%;
+}
+
+// .about-image {
+//   float: left;
+// }
+
+// .about-image img {
+//   display:flex;
+// }
+
+.pm{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.left-image {
+  padding-left: 15%;
+  padding-right: 50px;
+}
+
+.left-text h2{
+  position: relative;
+	padding: 0 0 20px;
+	margin-bottom: 20px;
+}
+
+.left-text h2:after{
+	content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 80px;
+  border-radius: 2px;
+  background-color: #794aa2;
+}
+
+.actives{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.right-image {
+  padding-right: 20%;
+  padding-left: 50px;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.right-text h2{
+  position: relative;
+	padding: 0 0 20px;
+	margin-bottom: 20px;
+}
+
+.right-text h2:after{
+	content: '';
+  position: absolute;
+  left: 90%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 80px;
+  border-radius: 2px;
+  background-color: #794aa2;
 }
 
 .three-column {
   float: left;
   width: 33.33%;
-  padding: 10px;
+  padding: 80px;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .three-column li{
   font-size: 15px;
   padding: 5px;
   font-weight: bold;
+}
+
+.three-column img {
+  padding-bottom: 20px;
+}
+
+.compay-section{
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+  clear: both;
+}
+
+.compay-title{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  clear: both;
 }
 
 .split-section:after {
@@ -539,7 +660,7 @@ $header_heights: 45%;
 }
 
 .consulting-section{
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: #f7f7f7;
   padding-bottom: 80px;
   clear: both;
 }
@@ -610,18 +731,20 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.19);
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.19);
+  position: absolute;
 }
 
 .left{
 	background: url("../assets/psecontact.jpg") no-repeat center;
 	background-size: cover;
   height: 100%;
-  position: relative;
+  // position: relative;
 }
 
 .right{
-	padding: 25px 40px;
+  padding: 25px 40px;
+  // position: fix;
 }
 
 .right select{
@@ -637,7 +760,7 @@ body{
 
 h2{
 	position: relative;
-	padding: 0 0 20px;
+	padding: 0 0 15px;
 	margin-bottom: 20px;
 }
 
@@ -813,10 +936,11 @@ textarea{
 }
 
 .wrapper .form .inputfield label{
-   width: 300px;
-   color: #757575;
-   margin-right: 10px;
+  width: 300px;
+  color: #757575;
+  margin-right: 10px;
   font-size: 14px;
+  max-width: 220px;
 }
 
 .wrapper .form .inputfield .input,
@@ -875,6 +999,7 @@ textarea{
 .wrapper .form .inputfield p{
    font-size: 14px;
    color: #757575;
+   margin-right: 30px;
 }
 
 
@@ -965,20 +1090,6 @@ textarea{
   text-align: center;
   font-size: 100px;
   padding: 150px;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column1 {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row1::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 @media (max-width:420px) {
