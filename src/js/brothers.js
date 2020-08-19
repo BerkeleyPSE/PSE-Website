@@ -21,7 +21,7 @@ $(document).ready(function() {
         ['Natalia Brusco', 'natalia_brusco1.jpg', 'natalia_brusco.jpg'],
         ['Priyanka Vatturi', 'priyanka_vatturi.jpg', 'priyanka_vatturi.jpg'],
         ['Adrian Chiu', 'adrian_chiu.jpg', 'adrian_chiu.jpg'],
-        ['Amanda Di', 'pselogo2.png', 'amanda_di.jpg'],
+        ['Amanda Di', 'amanda_di.jpg', 'amanda_di.jpg'],
         ['Christopher  Diaz', 'christopher_diaz.jpg', 'christopher_diaz.jpg']
         ['Jessie Lee', 'jessie_lee.jpg', 'jessie_lee.jpg'],
         ['Julia Ide', 'julia_ide.jpg', 'julia_ide.jpg'],
@@ -58,7 +58,7 @@ $(document).ready(function() {
     brothers.sort(last_name_comparator)
 
 
-    $('#executive-board-section').append(makeBrothers(eboard))
+    // $('#executive-board-section').append(makeBrothers(eboard))
     $('#brothers-section').append(makeBrothers(brothers));
 
     // $(".frame").children("img").hover(function() {
@@ -87,7 +87,7 @@ function makeBrothers(arr) {
         let selected = arr.slice(i, Math.min(arr.length, i + ROW_LENGTH));
         for (j of selected) {
             if (j != undefined) {
-                if (j[1] == 'pselogo2.png' || j[0] == 'Emily Wu') {
+                if (j[1] == 'pselogo2.png' || j[0] == 'Emily Wu' || j[0] == 'Amanda Di') {
                     html += '<div class="frame">' +
                             '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
                             '<p>' + j[0] + '</p>' +
