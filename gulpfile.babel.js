@@ -1,4 +1,4 @@
-
+let production = true;
 let gulp = require('gulp');
 let browserSync = require('browser-sync').create();
 let htmlmin = require('gulp-htmlmin');
@@ -11,44 +11,70 @@ let plumber = require('gulp-plumber');
 sass.compiler = require('node-sass');
 
 function serve(cb) {
-    gulp.series(build, function() {
-        browserSync.init({
-            server: {
-                baseDir: "./build"
-            }
-        })
-    })();
+    if (!production) {
+        gulp.series(build, function() {
+            browserSync.init({
+                server: {
+                    baseDir: "./build"
+                }
+            })
+        })();
 
-    gulp.watch('src/*.html', html);
-    gulp.watch('src/css/*', css);
-    gulp.watch('src/js/*', js);
-    gulp.watch('src/assets/*', assets);
+        gulp.watch('src/*.html', html);
+        gulp.watch('src/css/*', css);
+        gulp.watch('src/js/*', js);
+        gulp.watch('src/assets/*', assets);
+    } else {
+        build(cb);
+    }
     cb();
 }
 
 function html() {
+    if (!production) {
+        return gulp.src('./src/*.html')
+            .pipe(plumber())
+            .pipe(htmlmin({ collapseWhitespace: true }))
+            .pipe(gulp.dest('./build/'))
+            .pipe(browserSync.stream());
+    }
+
     return gulp.src('./src/*.html')
         .pipe(plumber())
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest('./build/'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('./build/'));
 }
 
 function css() {
+    if (!production) {
+        return gulp.src('./src/css/*.scss')
+            .pipe(plumber())
+            .pipe(sass().on('error', sass.logError))
+            .pipe(cleanCSS({compatibility: 'ie8'}))
+            .pipe(gulp.dest('./build/css/'))
+            .pipe(browserSync.stream());
+    }
+
     return gulp.src('./src/css/*.scss')
         .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('./build/css/'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('./build/css/'));
 }
 
 function js() {
+    if (!production) {
+        return gulp.src('./src/js/*.js')
+            .pipe(plumber())
+            .pipe(minify())
+            .pipe(gulp.dest('./build/js'))
+            .pipe(browserSync.stream());
+    }
+
     return gulp.src('./src/js/*.js')
         .pipe(plumber())
         .pipe(minify())
-        .pipe(gulp.dest('./build/js'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('./build/js'));
 }
 
 function build(cb) {
