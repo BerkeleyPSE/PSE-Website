@@ -327,7 +327,7 @@ $header_heights: 45%;
       width: 100%;
   }
   p{
-      margin-left: 50px;
+      margin-right: 5vw;
       margin-bottom: 0;
   }
   #signature{
@@ -350,7 +350,7 @@ $header_heights: 45%;
   // background: url("../assets/photo2.jpg");
   background-repeat: no-repeat;
   background-position: 50% 35%;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .interest-form h2{
@@ -1149,5 +1149,27 @@ textarea{
         .profile{
             min-width: 200px !important;
         }
+    }
+    .message-image{
+        margin-top: 3vh !important;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .shift-left{
+        margin-left: 6vw;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .font-md{
+        clear: left;
+        margin-left: 6vw;
+    }
+    .message-image{
+        float: none !important;
+    }
+    .message{
+        text-align: center;
     }
 }

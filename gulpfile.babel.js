@@ -1,4 +1,4 @@
-let production = true;
+let production = false;
 let gulp = require('gulp');
 let browserSync = require('browser-sync').create();
 let htmlmin = require('gulp-htmlmin');

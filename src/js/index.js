@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var typed = new Typed('#typed', {
-      strings: ['CREATIVE.', 'PROFESSIONAL.', 'A BROTHERHOOD.', 'PI SIGMA EPSILON.'],
+      strings: ['CREATIVE.', 'PROFESSIONAL.', 'A FAMILY.', 'PI SIGMA EPSILON.'],
       smartBackspace: true,
       typeSpeed: 100,
       startDelay: 500,

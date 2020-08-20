@@ -56,9 +56,6 @@ $(document).ready(function() {
         ['Sierra Liu', 'pselogo2.png', 'sierra_liu.jpg']
     ]
     brothers.sort(last_name_comparator)
-
-
-    // $('#executive-board-section').append(makeBrothers(eboard))
     $('#brothers-section').append(makeBrothers(brothers));
 
     // $(".frame").children("img").hover(function() {
