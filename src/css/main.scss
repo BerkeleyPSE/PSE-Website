@@ -86,7 +86,6 @@ $header_heights: 45%;
     padding: 0;
     height: 100%;
     background: url("../assets/photo2.jpg");
-    // background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/home/header1.png");
     background-position: 40% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,10 +95,8 @@ $header_heights: 45%;
 #about-header-section{
     padding: 0;
     height: $header_heights;
-    // background: url("../assets/header.JPG");
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
-    // background-position: 50% 23%;
-    background-position: 70% 30%;
+    background: url("../assets/about.jpg");
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,10 +104,8 @@ $header_heights: 45%;
 #contact-header-section{
     padding: 0;
     height: $header_heights;
-    // background: url("../assets/header.JPG");
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,q_auto:best/website/home/header3.png");
-    // background-position: 50% 23%;
-    background-position: 70% 70%;
+    background: url("../assets/contact.jpg");
+    background-position: center 35%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,9 +113,7 @@ $header_heights: 45%;
 #spotlight-header-section{
   padding: 0;
   height: $header_heights;
-  // background: url("../assets/header.JPG");
-  background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
-  // background-position: 50% 23%;
+  background: url("../assets/recruitment.jpg");
   background-position: 70% 30%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,7 +122,7 @@ $header_heights: 45%;
 #careers-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/website/about/header2.jpg");
+    background: url("../assets/career.jpg");
     background-position: 70% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,8 +131,8 @@ $header_heights: 45%;
 #brothers-header-section{
     padding: 0;
     height: $header_heights;
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/website/about/header1.png");
-    background-position: 70% 15%;
+    background: url("../assets/members.jpg");
+    background-position: center 25%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -147,9 +140,8 @@ $header_heights: 45%;
 #join-header-section{
     padding: 0;
     height: $header_heights;
-    // background: url("../assets/seniors.jpeg");
-    background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/website/home/header2.jpg");
-    background-position: 70% 30%;
+    background: url("../assets/join.jpg");
+    background-position: center 35%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -346,8 +338,7 @@ $header_heights: 45%;
   display: grid;
   place-items: center;
   padding: 100px;
-  background: url("https://res.cloudinary.com/berkeleypse-tech/image/upload/q_auto:best/website/brothers/header1.png");
-  // background: url("../assets/photo2.jpg");
+  background: url("../assets/banquet.png");
   background-repeat: no-repeat;
   background-position: 50% 35%;
   background-size: cover;
