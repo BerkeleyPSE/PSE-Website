@@ -25,8 +25,8 @@
                 <div class="d-inline-flex flex-nowrap align-items-center justify-content-end nav flex-even order-sm-1 order-md-0">
                     <a href="index.html"><span class="page-link">HOME</span></a>
                     <a href="about.html"><span class="page-link">ABOUT</span></a>
-                    <a href="brothers.html"><span class="page-link">BROTHERS</span></a>
-                    <a href="spotlight.html"><span class="page-link">SPOTLIGHT</span></a>
+                    <a href="members.html"><span class="page-link">MEMBERS</span></a>
+                    <a href="recruit.html"><span class="page-link">RECRUITMENT</span></a>
                 </div>
                 <div class="d-inline-flex flex-nowrap justify-content-center order-sm-0 order-md-1">
                   <a href="index.html"><img src="./assets/pselogo2.png" id="logo"></a>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="wrapper">
-          <h2>PSE APPLICATION</h2>
+          <h2>PSE Application</h2>
           <div class="form">
               <form method="post" autocomplete="off" name="google-sheet">
                 <div class="inputfield">
@@ -58,7 +58,7 @@
                 <div class="inputfield">
                   <label>School Year</label>
                   <div class="custom_select">
-                    <select name="Year"> 
+                    <select name="Year">
                       <option value="">Select</option>
                       <option value="Freshman">Freshman</option>
                       <option value="Sophomore">Sophomore</option>
@@ -75,33 +75,78 @@
                     <label>Phone Number</label>
                     <input type="text" name="Phone" class="input">
                 </div>
-                <div class="inputfield">
-                    <label>Current Address</label>
+                <!-- <div class="inputfield">
+                    <label>Berkeley Address</label>
                     <input type="text" name="Address" class="input">
-                </div>
+                </div> -->
                 <div class="inputfield">
                   <label>1. Why are you interested in business?<br><b>300 Words or Less</b></br></label>
-                  <textarea class="textarea" name="Question 1"></textarea>
+                  <textarea class="textarea" name="Why are you interested in business?"></textarea>
                 </div>
                 <div class="inputfield">
                   <label>2. Tell us about a business you admire and why?<br><b>300 Words or Less</b></br></label>
-                  <textarea class="textarea" name="Question 2"></textarea>
+                  <textarea class="textarea" name="Tell us about a business you admire and why?"></textarea>
                 </div>
                 <div class="inputfield">
                   <label>3. Do you have any other committments for the semester?</label>
-                  <textarea class="textarea" name="Question 3"></textarea>
+                  <textarea class="textarea" name="Do you have any other committments for the semester?"></textarea>
                 </div>
                 <div class="inputfield">
                   <label>4. Are you available every Monday night from 7-10pm PST for our mandatory trainings?</label>
-                  <textarea class="textarea" name="Question 4"></textarea>
+                  <p>
+                    <input type="radio" value="Yes" name="Are you available every Monday night from 7-10pm PST for our mandatory trainings?" checked>Yes</input>
+                  </p>
+                  <p>
+                    <input type="radio" value="No" name="Are you available every Monday night from 7-10pm PST for our mandatory trainings?">No</input>
+                  </p>
                 </div>
                 <div class="inputfield">
                   <label>5. Where will you be located for the Fall semester? (On-campus, domestic, or international)</label>
-                  <textarea class="textarea" name="Question 5"></textarea>
+                  <div class="custom_select">
+                    <select name="Where will you be located for the Fall semester? (On-campus, domestic, or international)">
+                      <option value="">Select</option>
+                      <option value="Campus">On-Campus</option>
+                      <option value="Domestic">Domestic</option>
+                      <option value="International">Interational</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="inputfield">
-                  <label>6. Is there anything else you would like us to know?</label>
-                  <textarea class="textarea" name="Question 6"></textarea>
+                  <label>6. How did you hear about us?</label>
+                  <div class="custom_select">
+                    <select name="How did you hear about us?">
+                      <option value="">Select</option>
+                      <option value="Online Flyering">Online Flyering</option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Website">Website</option>
+                      <option value="Friend">Friend</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="inputfield">
+                  <label>7. Are you available Friday, September 4th, 2020 at 7PM for an Invite-Only Event?</label>
+                  <p>
+                    <input type="radio" value="Yes" name="Are you available Friday, September 4th, 2020 at 7PM for an Invite-Only Event?" checked>Yes</input>
+                  </p>
+                  <p>
+                    <input type="radio" value="No" name="Are you available Friday, September 4th, 2020 at 7PM for an Invite-Only Event?">No</input>
+                  </p>
+                </div>
+                <div class="inputfield">
+                  <label>8. Please select your availabilities for an interview below for all four days:</label>
+                  <input type="checkbox" id="day1" value="5" name="Please select your availabilities for an interview below for all four days:">
+                  <label for="dayone">September 5, 8am - 11am, 12pm - 4pm</label>
+                  <input type="checkbox" id="day2" value="6" name="Please select your availabilities for an interview below for all four days:">
+                  <label for="daytwo">September 6, 8am - 11am, 12pm - 4pm</label>
+                  <input type="checkbox" id="day3" value="8" name="Please select your availabilities for an interview below for all four days:">
+                  <label for="daytwo">September 8, 7 - 8:30pm, 8:30pm - 10pm</label>
+                  <input type="checkbox" id="day4" value="9" name="Please select your availabilities for an interview below for all four days:">
+                  <label for="daytwo">September 9, 7 - 8:30pm, 8:30pm - 10pm</label>
+                </div>
+                <div class="inputfield">
+                  <label>9. Is there anything else you would like us to know?</label>
+                  <textarea class="textarea" name="Is there anything else you would like us to know?"></textarea>
                 </div>
                 <div class="inputfield">
                   <p><b>Note</b>: Your application will not be considered completed until you email a 1) Cover Letter, 2) Resume, 3) Headshot, 4) Screenshot of your class schedule, and 5) Unofficial transcript to berkeleypse.recruiting@gmail.com, in addition to submiting this application. </p>
@@ -135,18 +180,14 @@
 
         <div class="footer">
             <div class="d-flex justify-content-center align-items-end">
-                <span class="fab fa-facebook-f icon"></span>
-                <span class="fab fa-instagram icon"></span>
-                <span class="fab fa-linkedin-in icon"></span>
+              <a href="https://www.facebook.com/berkeleyPSE/" target="_blank"><span class="fab fa-facebook-f icon"></span></a>
+              <a href="https://www.instagram.com/pseberkeley/" target="_blank"><span class="fab fa-instagram icon"></span></a>
+              <a href="https://www.linkedin.com/company/berkeleypse/" target="_blank"><span class="fab fa-linkedin-in icon"></span></a>
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <p>© 2020 — Pi Sigma Epsilon | UC Berkeley Zeta Chi Chapter</p>
             </div>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <script src="./js/index-min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             setTimeout(function(){
