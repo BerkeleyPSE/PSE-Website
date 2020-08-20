@@ -85,7 +85,7 @@ function build(cb) {
 function assets() {
   return gulp.src('./src/assets/*')
         .pipe(plumber())
-        // .pipe(imagemin())
+        .pipe(imagemin())
         .pipe(gulp.dest('./build/assets/'));
 }
 
