@@ -84,17 +84,17 @@ function makeBrothers(arr) {
         let selected = arr.slice(i, Math.min(arr.length, i + ROW_LENGTH));
         for (j of selected) {
             if (j != undefined) {
-                if (j[1] == 'pselogo2.png' || j[0] == 'Emily Wu' || j[0] == 'Amanda Di') {
-                    html += '<div class="frame">' +
-                            '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
-                            '<p>' + j[0] + '</p>' +
-                        '</div>';
-                } else {
-                    html += '<div class="frame">' +
-                            '<div class="profile" style="background-image: url(https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/brothers/' + j[1] + ');"></div>' +
-                            '<p>' + j[0] + '</p>' +
-                        '</div>';
-                }
+                // if (j[1] == 'pselogo2.png' || j[0] == 'Emily Wu' || j[0] == 'Amanda Di') {
+                html += '<div class="frame">' +
+                        '<div class="profile" style="background-image: url(./assets/' + j[1] + ');"></div>' +
+                        '<p>' + j[0] + '</p>' +
+                    '</div>';
+                // } else {
+                //     html += '<div class="frame">' +
+                //             '<div class="profile" style="background-image: url(https://res.cloudinary.com/berkeleypse-tech/image/upload/fl_force_strip.progressive,q_auto:best/brothers/' + j[1] + ');"></div>' +
+                //             '<p>' + j[0] + '</p>' +
+                //         '</div>';
+                // }
             }
         }
     }
