@@ -1,4 +1,4 @@
-let production = false;
+let production = true;
 let gulp = require('gulp');
 let browserSync = require('browser-sync').create();
 let htmlmin = require('gulp-htmlmin');
@@ -83,6 +83,12 @@ function build(cb) {
 }
 
 function assets() {
+    if (!production) {
+        return gulp.src('./src/assets/*')
+              .pipe(plumber())
+              .pipe(gulp.dest('./build/assets/'));
+    }
+
   return gulp.src('./src/assets/*')
         .pipe(plumber())
         .pipe(imagemin())
