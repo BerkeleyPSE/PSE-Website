@@ -314,7 +314,7 @@ $header_heights: 45%;
 
 .message{
   vertical-align: top;
-  padding-right: 40px;
+  padding-right: 200px;
   @media (max-width: 620px) {
       width: 100%;
   }
@@ -324,12 +324,13 @@ $header_heights: 45%;
   }
   #signature{
       margin-bottom: 80px;
+      text-align: right;
   }
   .message-image{
     min-width: 300px;
     width: 20%;
     height: auto;
-    margin: 10px 50px 30px 50px;
+    margin: 10px 50px 30px 220px;
     float: left;
   }
 }
