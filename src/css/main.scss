@@ -1083,6 +1083,109 @@ textarea{
   padding: 150px;
 }
 
+// .calendar {
+//   text-align: center;
+//   padding: 40px;
+// }
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 50%;
+  margin: 50px 50px 0px 50px;
+}
+
+.card {
+  height: 300px;
+  width: 350px;
+  margin: 0 20px;
+  transition: 0.4s;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  height: 450px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.card .card-image{
+  height: 250px;
+  width: 100%;
+}
+
+.card .card-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .event{
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+}
+
+.card .top-text p{
+  font-size: 15px;
+  font-weight: 600;
+  color: #794aa2;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 0px;
+  // background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .bottom-text .description {
+  text-align: center;
+}
+
+.card .bottom-text .card-button {
+  margin: 20px 0;
+}
+
+.card .bottom-text .card-button a{
+  text-decoration: none;
+  background: #794aa2;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+
+.card .bottom-text .card-button a:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+// @media screen and (max-width: 978px) {
+//   .calendar {
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//   }
+//   .card {
+//     max-width: 700px;
+//     margin: 20px 0;
+//   }
+// }
+
 @media (max-width:420px) {
   .wrapper .form .inputfield{
     flex-direction: column;
