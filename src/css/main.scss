@@ -110,11 +110,11 @@ $header_heights: 45%;
     background-repeat: no-repeat;
 }
 
-#spotlight-header-section{
+#recruit-header-section{
   padding: 0;
   height: $header_heights;
   background: url("../assets/recruitment.jpg");
-  background-position: 70% 30%;
+  background-position: 70% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1200,7 +1200,7 @@ textarea{
   background: #794aa2;
   color: white;
   padding: 5px 8px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-flex;
 }
 
@@ -1220,20 +1220,44 @@ textarea{
   background: white;
   color: white;
   padding: 5px 8px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-flex;
 }
 
-// @media screen and (max-width: 978px) {
-//   .calendar {
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//   }
-//   .card {
-//     max-width: 700px;
-//     margin: 20px 0;
-//   }
-// }
+.coffee-chat {
+  background: #f7f7f7;
+  padding: 80px;
+}
+
+.coffee-chat h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 0;
+  color: black;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.coffee-chat .coffee-button {
+  margin: 5px 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.coffee-chat .coffee-button a{
+  text-decoration: none;
+  background: #794aa2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  font-size: 25px;
+}
+
+.coffee-chat .coffee-button a:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
 
 @media (max-width:420px) {
   .wrapper .form .inputfield{
