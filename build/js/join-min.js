@@ -1,0 +1,1 @@
+$(document).ready(function(){const e=document.forms["google-sheet"];e.addEventListener("submit",t=>{t.preventDefault(),fetch("https://script.google.com/macros/s/AKfycbyzmb8K5jIXub2vTD7niancYYBCv7tI8g1CNtuBbiPyH3KaDYKW/exec",{method:"POST",body:new FormData(e)}).then(e=>alert("Your Application is Submitted!")).catch(e=>console.error("Error!",e.message)),e.reset()})});
