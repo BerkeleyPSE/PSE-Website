@@ -1083,17 +1083,13 @@ textarea{
   padding: 150px;
 }
 
-// .calendar {
-//   text-align: center;
-//   padding: 40px;
-// }
-
 .calendar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 50%;
+  height: 60%;
+  padding-bottom: 40px;
   margin: 50px 50px 0px 50px;
 }
 
