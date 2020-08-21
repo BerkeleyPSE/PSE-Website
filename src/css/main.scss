@@ -110,11 +110,11 @@ $header_heights: 45%;
     background-repeat: no-repeat;
 }
 
-#spotlight-header-section{
+#recruit-header-section{
   padding: 0;
   height: $header_heights;
   background: url("../assets/recruitment.jpg");
-  background-position: 70% 30%;
+  background-position: 70% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -314,7 +314,7 @@ $header_heights: 45%;
 
 .message{
   vertical-align: top;
-  padding-right: 40px;
+  padding-right: 200px;
   @media (max-width: 620px) {
       width: 100%;
   }
@@ -324,12 +324,13 @@ $header_heights: 45%;
   }
   #signature{
       margin-bottom: 80px;
+      text-align: right;
   }
   .message-image{
     min-width: 300px;
     width: 20%;
     height: auto;
-    margin: 10px 50px 30px 50px;
+    margin: 10px 50px 30px 220px;
     float: left;
   }
 }
@@ -351,6 +352,7 @@ $header_heights: 45%;
 
 .interest-form h2:after{
   background-color:white;
+  visibility: hidden;
 }
 
 .interest-form .form {
@@ -413,8 +415,9 @@ $header_heights: 45%;
 }
 
 .form-button:hover {
-  opacity: 0.9;
   outline: none;
+  transform: scale(0.9);
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 550px) {
@@ -487,37 +490,11 @@ $header_heights: 45%;
   padding-right: 8%;
 }
 
-// .about-section{
-//   background-color: #f7f7f7;
-//   padding-bottom: 80px;
-//   clear: both;
-// }
-
-// .about-title{
-//   text-align: center;
-//   padding-top: 80px;
-//   padding-bottom: 40px;
-//   clear: both;
-// }
-
-// #about-title{
-//   color: black;
-//   display: inline;
-//   padding-left: 10px;
-//   clear: both;
-// }
-
-// .about-message{
-//   text-align: center;
-//   padding-left: 8%;
-//   padding-right: 10%;
-//   margin-left: 50%;
-// }
-
 .about-section{
   background-color: #f7f7f7;
   padding-bottom: 80px;
   clear: both;
+  display: flex;
 }
 
 .about-title{
@@ -525,6 +502,14 @@ $header_heights: 45%;
   padding-top: 80px;
   padding-bottom: 40px;
   clear: both;
+  position: inline-block;
+}
+
+.about-image {
+  align-self: center;
+  padding-right: 150px;
+  padding-top: 80px;
+  position: relative;
 }
 
 #about-title{
@@ -536,17 +521,9 @@ $header_heights: 45%;
 
 .about-message{
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%
+  padding-right: 8%;
+  padding-left: 150px;
 }
-
-// .about-image {
-//   float: left;
-// }
-
-// .about-image img {
-//   display:flex;
-// }
 
 .pm{
   display: flex;
@@ -659,6 +636,7 @@ $header_heights: 45%;
   background-color: white;
   padding-bottom: 80px;
   clear: both;
+  display: flex;
 }
 
 .history-title{
@@ -666,6 +644,15 @@ $header_heights: 45%;
   padding-top: 80px;
   padding-bottom: 40px;
   clear: both;
+  position: inline-block;
+}
+
+.history-image {
+  align-self: center;
+  padding-left: 150px;
+  padding-top: 80px;
+  position: relative;
+  overflow: visible;
 }
 
 #history-title{
@@ -677,14 +664,15 @@ $header_heights: 45%;
 
 .history-message{
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%
+  padding-left: 25%;
+  padding-right: 150px;
 }
 
 .consulting-section{
   background-color: #f7f7f7;
   padding-bottom: 80px;
   clear: both;
+  display: flex;
 }
 
 .consulting-title{
@@ -692,6 +680,14 @@ $header_heights: 45%;
   padding-top: 80px;
   padding-bottom: 40px;
   clear: both;
+  position: inline-block;
+}
+
+.consulting-image {
+  align-self: center;
+  padding-right: 150px;
+  padding-top: 80px;
+  position: relative;
 }
 
 #consulting-title{
@@ -703,8 +699,8 @@ $header_heights: 45%;
 
 .consulting-message{
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%
+  padding-right: 8%;
+  padding-left: 150px;
 }
 
 .font-md{
@@ -755,17 +751,20 @@ body{
 	background-color: #fff;
   box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.19);
   position: absolute;
+  overflow: hidden;
 }
 
 .left{
 	background: url("../assets/psecontact.jpg") no-repeat center;
 	background-size: cover;
   height: 100%;
+  // overflow: hidden;
   // position: relative;
 }
 
 .right{
   padding: 25px 40px;
+  // overflow: hidden;
   // position: fix;
 }
 
@@ -793,7 +792,7 @@ h2:after{
   bottom: 0;
   transform: translateX(-50%);
   height: 4px;
-  width: 80px;
+  width: 50px;
   border-radius: 2px;
   background-color: #794aa2;
 }
@@ -1059,6 +1058,7 @@ textarea{
   margin: 0 auto;
   padding: 70px 0 20px;
   width: 100%;
+  padding-bottom: 80px;
 }
 
 .acc h3 {
@@ -1090,6 +1090,10 @@ textarea{
   transform: translateY(-50%);
 }
 
+.answer video {
+  align-content: center;
+}
+
 .answer {
   background-color: #fff;
   display: none;
@@ -1119,21 +1123,22 @@ textarea{
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 60%;
+  height: 70%;
   padding-bottom: 40px;
   margin: 50px 50px 0px 50px;
+  overflow: hidden;
 }
 
 .card {
-  height: 300px;
+  height: 350px;
   width: 350px;
-  margin: 0 20px;
+  margin: 0 15px;
   transition: 0.4s;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 .card:hover {
-  height: 450px;
+  height: 470px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
@@ -1149,7 +1154,8 @@ textarea{
 }
 
 .card .top-text {
-  padding: 5px;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .card .top-text .event{
@@ -1163,16 +1169,17 @@ textarea{
   font-weight: 600;
   color: #794aa2;
   line-height: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .card .bottom-text{
-  padding: 0 20px 10px 20px;
-  margin-top: 0px;
+  padding: 0 20px 0 20px;
+  margin-top: -30px;
   // background: white;
   opacity: 0;
   visibility: hidden;
   transition: 0.1s;
+  overflow: hidden;
 }
 
 .card:hover .bottom-text {
@@ -1185,7 +1192,8 @@ textarea{
 }
 
 .card .bottom-text .card-button {
-  margin: 20px 0;
+  margin: 5px 0;
+  padding-bottom: 20px;
 }
 
 .card .bottom-text .card-button a{
@@ -1193,7 +1201,7 @@ textarea{
   background: #794aa2;
   color: white;
   padding: 5px 8px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-flex;
 }
 
@@ -1202,16 +1210,55 @@ textarea{
   opacity: 0.8;
 }
 
-// @media screen and (max-width: 978px) {
-//   .calendar {
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//   }
-//   .card {
-//     max-width: 700px;
-//     margin: 20px 0;
-//   }
-// }
+.card .bottom-text .invite-card-button {
+  margin: 5px 0;
+  padding-bottom: 20px;
+  pointer-events: none;
+}
+
+.card .bottom-text .invite-card-button a{
+  text-decoration: none;
+  background: white;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+.coffee-chat {
+  background: #f7f7f7;
+  padding: 80px;
+}
+
+.coffee-chat h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 0;
+  color: black;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.coffee-chat .coffee-button {
+  margin: 5px 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.coffee-chat .coffee-button a{
+  text-decoration: none;
+  background: #794aa2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  font-size: 25px;
+}
+
+.coffee-chat .coffee-button a:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
 
 @media (max-width:420px) {
   .wrapper .form .inputfield{

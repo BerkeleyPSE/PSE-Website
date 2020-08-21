@@ -3,7 +3,7 @@ $(document).ready(function() {
       strings: ['CREATIVE.', 'PROFESSIONAL.', 'A FAMILY.', 'PI SIGMA EPSILON.'],
       smartBackspace: true,
       typeSpeed: 100,
-      startDelay: 500,
+      startDelay: 2100,
       backDelay: 700
     });
 
