@@ -83,6 +83,12 @@ function build(cb) {
 }
 
 function assets() {
+    if (!production) {
+        return gulp.src('./src/assets/*')
+              .pipe(plumber())
+              .pipe(gulp.dest('./build/assets/'));
+    }
+
   return gulp.src('./src/assets/*')
         .pipe(plumber())
         .pipe(imagemin())
