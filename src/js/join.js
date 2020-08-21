@@ -8,5 +8,6 @@ $(document).ready(function() {
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => alert("Your Application is Submitted!"))
         .catch(error => console.error('Error!', error.message))
+        form.reset()
     })
 });
