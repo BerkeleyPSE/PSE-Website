@@ -3,7 +3,6 @@ $(document).ready(function() {
         async: false
     });
     data = getData()
-    console.log(data, "hello")
     $('#content-table').DataTable({
         data: data[0],
         "order": [[ 5, "desc" ]]
@@ -25,7 +24,6 @@ function getData() {
     for (let i = 1; i < 8; i++) {
         let spreadsheetURL = prefix + sheetID + "/" + i.toString() + postfix
         $.getJSON(spreadsheetURL, function(data) {
-            console.log(data, people, i)
             let title = data.feed.title.$t
             for (let d of data.feed.entry) {
                 if (title.includes("Internships")) {
