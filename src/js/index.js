@@ -13,7 +13,7 @@ $(document).ready(function() {
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => alert('Success!', response))
+          .then(response => alert('Interest Form Submitted!', response))
           .catch(error => alert('Error!', error.message))
     })
 });
