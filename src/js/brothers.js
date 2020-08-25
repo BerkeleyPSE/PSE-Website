@@ -12,17 +12,19 @@ $(document).ready(function() {
 
     let brothers = [
         ['John Van', 'john_van.jpg', 'john_van.jpg'],
+        ['Michael Hillsman', 'pselogo2.png', 'michael_hillsman.jpg'],
         ['Liona Li', 'liona_li.jpg', 'liona_li.jpg'],
         ['Olivia Lee', 'olivia_lee.jpg', 'olivia_lee.jpg'],
         ['Reshma Belur', 'reshma_belur.jpg', 'reshma_belur.jpg'],
         ['Amy Tran', 'amy_tran.jpg', 'amy_tran.jpg'],
         ['Britney Yip', 'britney_yip.jpg', 'britney_yip.jpg'],
+        ['Edward Chen', 'edward_chen.jpg', 'edward_chen.jpg'],
         ['Emily Wu', 'emily_wu.jpg', 'emily_wu.jpg'],
         ['Natalia Brusco', 'natalia_brusco1.jpg', 'natalia_brusco.jpg'],
         ['Priyanka Vatturi', 'priyanka_vatturi.jpg', 'priyanka_vatturi.jpg'],
         ['Adrian Chiu', 'adrian_chiu.jpg', 'adrian_chiu.jpg'],
         ['Amanda Di', 'amanda_di.jpg', 'amanda_di.jpg'],
-        ['Christopher  Diaz', 'christopher_diaz.jpg', 'christopher_diaz.jpg']
+        ['Christopher Diaz', 'christopher_diaz.jpg', 'christopher_diaz.jpg'],
         ['Jessie Lee', 'jessie_lee.jpg', 'jessie_lee.jpg'],
         ['Julia Ide', 'julia_ide.jpg', 'julia_ide.jpg'],
         ['Miles Yun', 'miles_yun.jpg', 'miles_yun2.jpg'],
