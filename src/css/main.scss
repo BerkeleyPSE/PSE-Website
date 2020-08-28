@@ -1259,6 +1259,11 @@ textarea{
   opacity: 0.8;
 }
 
+.google-calendar {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
 @media (max-width:420px) {
   .wrapper .form .inputfield{
     flex-direction: column;
