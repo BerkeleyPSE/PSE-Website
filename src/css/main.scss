@@ -1264,6 +1264,11 @@ textarea{
   padding-bottom: 80px;
 }
 
+.application-msg {
+  padding: 200px;
+  text-align: center;
+}
+
 @media (max-width:420px) {
   .wrapper .form .inputfield{
     flex-direction: column;
