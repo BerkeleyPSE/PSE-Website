@@ -42,7 +42,7 @@ $(document).ready(function() {
         ['Sarah Yoon', 'sarah_yoon.jpg', 'sarah_yoon.jpg'],
         ['Alan Lin', 'alan_lin.jpg', 'alan_lin.jpg'],
         ['Anirudh Kamath', 'anirudh_kamath.jpg', 'anirudh_kamath.jpg'],
-        ['Amit Palekar', 'amit_palekar.jpg', 'amit_palekar.jpg'],
+        ['Amit Palekar', 'amit_palekar.jpeg', 'amit_palekar.jpg'],
         ['Anni Wang', 'anni_wang.jpg', 'anni_wang.jpg'],
         ['Cori Anne Montero', 'corianne_montero.jpg', 'cori_montero.jpg'],
         ['Euna Jo', 'euna_jo.jpg', 'euna_jo.jpg'],
