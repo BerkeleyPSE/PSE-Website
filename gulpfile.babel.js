@@ -97,3 +97,4 @@ function assets() {
 
 //exports.build = build;
 exports.default = serve;
+exports.html = html
